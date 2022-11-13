@@ -1,9 +1,14 @@
+// API NBP http://api.nbp.pl/
+
 const getUsers = (e) => {
   e.preventDefault();
 
+  const currency = 'usd';
+  const day = new Date();
+
   const usersNumber = document.querySelector('[name = "users-number"]').value;
   const usersGender = document.querySelector('[name = "gender"]').value;
-  const url = `https://randomuser.me/api/?results=${usersNumber}&gender=${usersGender === "both" ? "male,female" : usersGender}`;
+  const url = `http://api.nbp.pl/api/exchangerates/rates/c/${currency}/${date}/?format=json`;
   console.log(url);
 
   fetch(url) //obietnica - oczekujący (pending)

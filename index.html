@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Currency Converter</title>
+  <title>Random User</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
 </head>
@@ -13,66 +13,39 @@
 <body>
 
   <div class="container bg-light">
-    <h1 class="my-4 py-1">Welcome! Convert your currency :)</h1>
+    <h1 class="my-4 py-1">Random User</h1>
 
     <form class="generator">
       
-      <div class="row initial-scale">
-        <div class="col">
-          <label class="generator__input-name py-3">Amount
-            <input type="text" class="form-control form-control-lg generator__input" name="users-number" type="number">
-          </label>
-        </div>
+      <div class="form-group">
+
+       <label class="generator__input-name py-3">Number of people
+        <input class="form-control form-control-lg generator__input" name="users-number" type="number" value="10">
+      </label>
+
       </div>
-
-      <div class="row">
-        <div class="col">
-          <label class="mr-sm-2 py-3" for="inlineFormCustomSelect">From</label>
-          <select class="custom-selec mr-sm-2" name="curr1" >
-            <option value="both" selected>PLN</option>
-            <option value="male">Man</option>
-            <option value="female">Woman</option>
-          </select>
-        </div>
-
-        <div class="col">
-          <label class="mr-sm-2 py-3" for="inlineFormCustomSelect">To</label>
-          <select class="custom-selec mr-sm-2" name="curr1" >
-            <option value="both" selected>EUR</option>
-            <option value="male">Man</option>
-            <option value="female">Woman</option>
-          </select>
-        </div>
+      
+      <div class="col-auto my-1">
+        <label class="mr-sm-2 py-3" for="inlineFormCustomSelect">Choose sex</label>
+        <select class="custom-selec mr-sm-2" name="gender" >
+          <option value="both" selected>all</option>
+          <option value="male">Man</option>
+          <option value="female">Woman</option>
+          
+        </select>
       </div>
-
-      <div class="row">
-        <div class="col">
-          <button type="submit" class="btn btn-warning btn-lg my-4 px-5">Convert</button><br>
+      <button type="submit" class="btn btn-info btn-lg my-4">Download Users</button><br>
       <!-- <input type="submit" class="button" value="Pobierz użytkowników"> -->
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col">
-          <div class="list-group">
-      <a href="#" class="list-group-item list-group-item-action list-group-item-warning">
+    </form>
+    
+    <div class="list-group">
+      <a href="#" class="list-group-item list-group-item-action list-group-item-info">
         <div class="user-list">
 
         </div>
       </a>
       
     </div>
-        </div>
-      </div>
-
-      </div>
-      
-      
-      
-      
-    </form>
-    
-    
 
   </div>
   
@@ -83,4 +56,3 @@
 </body>
 
 </html>
-
